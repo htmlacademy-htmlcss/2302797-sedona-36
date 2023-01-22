@@ -42,8 +42,64 @@
         </li>
       </ul>
     </header>
+    <section class="catalog-products">
+      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Бассейн"checked>Бассейн</label>
+              </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="Парковка" checked>Парковка</label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi</label>
+            </label>
+          </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Тип жилья:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="Hotel" checked>Гостиница</label>
+            </li>
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="radio" name="product-group" value="Motel">Мотель</label>
+        </li>
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="radio" name="product-group" value="Apartments">Апартаменты</label>
+          </label>
+        </li>
+        </ul>
+        </fieldset>
+
+        <button class="button" type="submit">Показать</button>
+      </form>
+      <select class="select-control" aria-label="Сортировка">
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="expensive">Сначала дорогое</option>
+      </select>
+      <a class="button" href="#">
+        <span class="visually-hidden">Показать карточки</span>
+      </a>
+      <a class="button button-light" href="#">
+        <span class="visually-hidden">Показать список</span>
+      </a>
+    </section>
   </main>
+
   <footer class="page-footer">
     <h2 class="visually-hidden">Социальные сети</h2>
     <section class="footer-social">
@@ -68,7 +124,7 @@
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <address class="footer-contacts-address">
-        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
     </section>
     <section class="footer-logo-htmlacademy">
