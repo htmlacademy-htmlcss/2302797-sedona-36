@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2"); format("woff2")
+  src: url("fonts/ptsans-400.woff2") format("woff2");
   font-display:swap;
 }
 
@@ -10,13 +10,13 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2"); format("woff2")
+  src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display:swap;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18p x;
+  font-size: 18px;
   line-height: 21px;
   color:#000000;
   background-color: #ffffff;
@@ -36,9 +36,20 @@ body {
   text-align: center;
 }
 
-.walcome-content {
-  color: #000000;
-  background-color: #ffffff;
+.button-entry {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color:#ffffff;
+  background-color:#756157;
+  text-decoration: none;
+  text-align: center;
+  text-transform:uppercase;
+}
+
+.welcome-content {
+  color: #ffffff;
+  background-color: #000000;
   background-image: url("/images/gallary/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -60,4 +71,192 @@ body {
   font-size: 22px;
   line-height: 26px;
 }
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.background-basic-3 {
+  background-color:rgba(131, 179, 211, 0.2);
+  color: #FFFFFF;
+}
+
+.background-second-1 {
+  background-color:rgba(131, 179, 211, 0.12);
+}
+
+.background-second-2 {
+  background-color:#83B3D333;
+}
+
+.appeal-titel {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.appeal-intro {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.attractions-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hotel-search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hotel-search-date {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.button-search {
+  color:#FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color:#756157;
+  text-decoration:none;
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscribe {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("/images/gallary/fone-main.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscribe-info {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.button-hotel-search {
+  color:#FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color:#82B3D3  ;
+  text-decoration:none;
+}
+
+.page-footer a {
+color: #000000;
+background-color: #ffffff;
+text-decoration: none;
+}
+
+.footer-contacts-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-catalog a {
+text-decoration: none;
+}
+.catalog-inner {
+  color: #ffffff;
+  background-image: url("/images/gallary/fone-catalog.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+.catalog-title{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+ .breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color:#ffffff;
+  text-decoration: none;
+ }
+
+ .catalog-filter-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+ }
+
+ .control-input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+ }
+
+ .button-apply {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color:#82B3D3;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+ .button-reset {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+ }
+
+.search-number {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+}
+
 
