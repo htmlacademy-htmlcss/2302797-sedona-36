@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -40,9 +41,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-title">Гостиницы Седоны</h1>
+    <main class="main-catalog">
+      <section class="catalog-inner">
+        <h1 class="catalog-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
@@ -53,12 +54,8 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      </header>
-      <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -79,7 +76,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
@@ -100,16 +96,21 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="reset">Сбросить</button>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          </fieldset>
+          <button class="button button-apply" type="submit">Применить</button>
+          <button class="button button-reset" type="reset">Сбросить</button>
         </form>
+      </section>
 
-        <h2 class="search">Найдено гостиниц: 38</h2>
+      <section class="search">
+        <h2 class="search-number">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-        <a class="button" href="#">
+        <a class="button button-light" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a class="button button-light" href="#">
@@ -118,7 +119,6 @@
         <a class="button button-light" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
-
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="product.html">
@@ -142,7 +142,7 @@
             <p class="hotel-option">Гостиница</p>
             <p class="prod-card-price">От 5000 ₽</p>
             <a class="button hotel-card-button" href="#">Подробнее</a>
-            <button class="hotel-like-button" type="button">В Избранное</button>
+            <button class="hotel-like-button like" type="button">В Избранном</button>
             <div class="icone-stars">
               <span class="visually-hidden">4 звезды</span>
             </div>
@@ -192,17 +192,17 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link pagination-pass" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-
       </section>
-      <section class="subscribe">
+
+      <section class="subscribe-catalog">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-info-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="sending-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" type="email" name="email" placeholder="Ваш e-mail" required>
           <button class="button-hotel-search" type="submit">Подписаться</button>
@@ -214,17 +214,17 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
+              <a class="button link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
+              <a class="button link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="button link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
               </a>
             </li>
@@ -233,17 +233,16 @@
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <address class="footer-contacts-address">
-            <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="footer-contacts-address-phone link" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
         </section>
         <section class="footer-logo-htmlacademy">
           <h2 class="visually-hidden">Копирайтер</h2>
-          <a class="link-to-academy" href="https://htmlacademy.ru/">
+          <a class="link link-to-academy" href="https://htmlacademy.ru/">
             <img class="logo-academy" src="images/footer/academy-logo.svg" alt="Логотип .html academy">
           </a>
         </section>
       </footer>
     </main>
   </body>
-
 </html>
