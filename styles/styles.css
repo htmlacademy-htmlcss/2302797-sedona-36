@@ -2,28 +2,32 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
-  font-display:swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
-  font-display:swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color:#000000;
+  color: #000000;
   background-color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
 .page-header {
-  background-color:#ffffff;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -31,8 +35,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color:inherit;
-  text-decoration: none;
+  color: inherit;
   text-align: center;
 }
 
@@ -40,17 +43,16 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color:#ffffff;
-  background-color:#756157;
-  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
   text-align: center;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 .welcome-content {
   color: #ffffff;
   background-color: #000000;
-  background-image: url("/images/gallary/index-background.jpg");
+  background-image: url("../images/gallary/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -79,6 +81,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
 }
+
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
@@ -87,19 +90,20 @@ body {
 }
 
 .background-basic-3 {
-  background-color:rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
   color: #FFFFFF;
 }
 
 .background-second-1 {
-  background-color:rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
+
 .description-color {
   color: #333333;
 }
 
 .background-second-2 {
-  background-color:#83B3D333;
+  background-color: #83B3D333;
 }
 
 .appeal-titel {
@@ -143,14 +147,13 @@ body {
 }
 
 .button-search {
-  color:#FFFFFF;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  background-color:#756157;
-  text-decoration:none;
+  background-color: #756157;
 }
 
 .subscribe-title {
@@ -164,7 +167,7 @@ body {
 .subscribe {
   color: #ffffff;
   background-color: #000000;
-  background-image: url("/images/gallary/fone-main.jpg");
+  background-image: url("../images/gallary/fone-main.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -177,20 +180,18 @@ body {
 }
 
 .button-hotel-search {
-  color:#FFFFFF;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  background-color:#82B3D3  ;
-  text-decoration:none;
+  background-color: #82B3D3;
 }
 
-.page-footer a {
-color: #000000;
-background-color: #ffffff;
-text-decoration: none;
+.link {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .footer-contacts-address {
@@ -201,54 +202,51 @@ text-decoration: none;
   text-transform: uppercase;
   text-align: center;
 }
-.main-catalog a {
-text-decoration: none;
-}
+
 .catalog-inner {
   color: #ffffff;
-  background-image: url("/images/gallary/fone-catalog.jpg");
+  background-image: url("../images/gallary/fone-catalog.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #000000;
 }
 
-.catalog-title{
+.catalog-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
- .breadcrumbs-link {
+.breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color:#ffffff;
-  text-decoration: none;
- }
+  color: #ffffff;
+}
 
- .catalog-filter-title {
+.catalog-filter-title {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
- }
+}
 
- .control-input {
+.control-input {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
- }
+}
 
- .button-apply {
+.button-apply {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color:#82B3D3;
+  background-color: #82B3D3;
   text-align: center;
   text-transform: uppercase;
- }
+}
 
- .button-reset {
+.button-reset {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -256,7 +254,7 @@ text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
- }
+}
 
 .search-number {
   font-weight: 700;
@@ -299,67 +297,68 @@ text-decoration: none;
 }
 
 .hotel-like-button {
-  color:#FFFFFF;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color:#82B3D3;
+  background-color: #82B3D3;
 }
- .hotel-card-button {
-  color:#FFFFFF;
+
+.hotel-card-button {
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color:#756157;
- }
+  background-color: #756157;
+}
 
- .hotel-like-button.like {
-  color:#FFFFFF;
+.like {
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color:#7DB54F;
- }
+  background-color: #7DB54F;
+}
 
- .hotel-rating {
+.hotel-rating {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
   background-color: #F2F2F2;
   text-align: center;
- }
+}
 
- .pagination-link {
+.pagination-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
   background-color: #82B3D3;
- }
+}
 
- .pagination-link.pagination-current {
+.pagination-current {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #000000;
   background-color: #F2F2F2;
- }
+}
 
- .pagination-link.pagination-pass {
+.pagination-pass {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
   background-color: #F2F2F2;
- }
+}
 
- .subscribe-info-catalog {
+.subscribe-info-catalog {
   color: #333333;
- }
+}
