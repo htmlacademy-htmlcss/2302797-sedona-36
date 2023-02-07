@@ -330,7 +330,7 @@ a {
   margin-left: 70px;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -347,17 +347,21 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  margin-left: 70px;
 }
 
-.catalog-filter-group {
+.atalog-filter-list {
   width: 151px;
   height: 157px;
+}
+
+.catalog-filter-item {
   margin-left: 70px;
 }
 
 .price {
   width: 288px;
-  height: 160px;
+  height: 104px;
 }
 
 .control-input {
