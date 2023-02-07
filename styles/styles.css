@@ -141,6 +141,11 @@ a {
   height: 385px;
 }
 
+.fone {
+  width: 800px;
+  height: 385px;
+}
+
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
@@ -256,6 +261,12 @@ a {
   text-align: center;
 }
 
+.field {
+  width: 452px;
+  height: 52px;
+  margin-left: 252px;
+}
+
 .button-hotel-search {
   color: #FFFFFF;
   font-weight: 700;
@@ -264,7 +275,8 @@ a {
   text-transform: uppercase;
   text-align: center;
   background-color: #82B3D3;
-
+  width: 232px;
+  height: 52px;
 }
 
 .link {
@@ -314,10 +326,13 @@ a {
   background-color: #000000;
 }
 
+
+
 .catalog-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin-left: 70px;
 }
 
 .breadcrumbs-link {
@@ -325,6 +340,7 @@ a {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  margin-left: 70px;
 }
 
 .catalog-filter-title {
