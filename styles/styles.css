@@ -39,6 +39,12 @@ a {
   text-decoration: none;
 }
 
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .main-container {
 flex-grow: 1;
 }
@@ -143,6 +149,7 @@ flex-grow: 1;
 .advantages-item {
   width: 400px;
   height: 385px;
+  list-style-type: none;
 }
 
 .fone {
@@ -202,6 +209,7 @@ flex-grow: 1;
 .attractions-item {
   width: 400px;
   height: 385px;
+  list-style-type: none;
 }
 
 .attractions-title {
@@ -267,6 +275,10 @@ flex-grow: 1;
   text-align: center;
 }
 
+.sending-form {
+  display: flex;
+}
+
 .field {
   width: 452px;
   height: 52px;
@@ -283,6 +295,7 @@ flex-grow: 1;
   background-color: #82B3D3;
   width: 232px;
   height: 52px;
+  border: none;
 }
 
 .link {
@@ -364,7 +377,10 @@ flex-grow: 1;
 }
 
 .catalog-filter-item {
-  margin-left: 70px;
+  margin-left: 30px;
+  list-style-type: none;
+  padding: 0;
+  width: 151px;
 }
 
 .price {
@@ -393,6 +409,7 @@ flex-grow: 1;
   text-transform: uppercase;
   width: 191px;
   height: 36px;
+  border: none;
 }
 
 .button-reset {
@@ -405,6 +422,7 @@ flex-grow: 1;
   background-color: transparent;
   width: 191px;
   height: 36px;
+  border: none;
 }
 
 .search-number {
@@ -433,6 +451,11 @@ flex-grow: 1;
   flex-wrap: wrap;
   margin-left: 70px;
   margin-right: 70px;
+}
+
+.hotel-card {
+  list-style-type: none;
+
 }
 
 .hotel-card-title {
@@ -466,6 +489,8 @@ flex-grow: 1;
   background-color: #82B3D3;
   width: 140px;
   height: 36px;
+  border: none;
+  margin-left: 20px;
 }
 
 .hotel-card-button {
@@ -504,12 +529,24 @@ flex-grow: 1;
   height: 37px;
 }
 
+.pagination {
+  display: flex;
+  margin-left: 70px;
+}
+
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
   background-color: #82B3D3;
+  padding: 12px 24px;
+  margin: 0 auto;
+}
+
+.pagination-item {
+  list-style-type: none;
+  margin-left: 8px;
 }
 
 .pagination-current {
@@ -525,7 +562,7 @@ flex-grow: 1;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: transparent;
 }
 
 .subscribe-info-catalog {
