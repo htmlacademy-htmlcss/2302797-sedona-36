@@ -45,6 +45,20 @@ fieldset {
   padding: 0;
 }
 
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
 flex-grow: 1;
 }
@@ -56,14 +70,15 @@ flex-grow: 1;
 
 .navigation {
   display: flex;
-  margin: 0 auto;
-  height: 64px;
-  padding: 0;
 }
 
 .logo {
-  width: 178px;
   margin-left: 70px;
+}
+
+.navigation-item {
+  list-style-type: none;
+  padding: 20px 16px;
 }
 
 .navigation-link {
@@ -75,14 +90,27 @@ flex-grow: 1;
 }
 
 .navigation-home {
-  width: 339px;
-  padding: 0;
-  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 .navigation-user {
-  width: 286px;
-  margin-left: 285px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.search {
+  min-width: 44px;
+  min-height: 64px;
+}
+
+.heart {
+  min-width: 44px;
+  min-height: 64px;
 }
 
 .button-entry {
@@ -94,6 +122,7 @@ flex-grow: 1;
   text-align: center;
   text-transform: uppercase;
   padding: 8px 34px;
+  margin: 0;
 }
 
 .main-container {
@@ -106,6 +135,8 @@ flex-grow: 1;
   background-image: url("../images/gallary/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .welcome-content-logo {
@@ -122,6 +153,8 @@ flex-grow: 1;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 69px;
+  margin-bottom: 25px;
 }
 
 .into-advantages {
@@ -129,6 +162,7 @@ flex-grow: 1;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin-bottom: 69px;
 }
 
 .advantages-title {
@@ -136,6 +170,7 @@ flex-grow: 1;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-top: 102px;
 }
 
 .advantages-list {
@@ -162,6 +197,11 @@ flex-grow: 1;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin-top: 62px;
+}
+
+.advantages-description-color {
+  margin-top: 62px;
 }
 
 .background-basic-3 {
@@ -187,6 +227,7 @@ flex-grow: 1;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 64px;
 }
 
 .appeal-intro {
@@ -195,6 +236,8 @@ flex-grow: 1;
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin-top: 20px;
+  margin-bottom: 64px;
 }
 
 .attractions-list {
@@ -210,6 +253,7 @@ flex-grow: 1;
   width: 400px;
   height: 385px;
   list-style-type: none;
+  padding-top: 51px;
 }
 
 .attractions-title {
@@ -218,6 +262,8 @@ flex-grow: 1;
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .hotel-search-title {
@@ -226,6 +272,7 @@ flex-grow: 1;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 59px;
 }
 
 .hotel-search-date {
@@ -234,6 +281,10 @@ flex-grow: 1;
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 54px;
 }
 
 .button-search {
@@ -245,9 +296,8 @@ flex-grow: 1;
   text-align: center;
   background-color: #756157;
   display: block;
-  width: 375px;
-  height: 52px;
-  margin: 0 auto;
+  padding: 8px 50px;
+  margin: 54px 412px 96px 412px;
 }
 
 .subscribe-title {
@@ -256,6 +306,9 @@ flex-grow: 1;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 96px;
 }
 
 .subscribe {
@@ -273,6 +326,9 @@ flex-grow: 1;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .sending-form {
@@ -282,7 +338,11 @@ flex-grow: 1;
 .field {
   width: 452px;
   height: 52px;
+  margin: 0;
+  padding: 0;
   margin-left: 252px;
+  margin-top: 54px;
+  border: none;
 }
 
 .button-hotel-search {
@@ -296,6 +356,8 @@ flex-grow: 1;
   width: 232px;
   height: 52px;
   border: none;
+  margin-top: 54px;
+  margin-bottom: 104px;
 }
 
 .link {
@@ -306,13 +368,15 @@ flex-grow: 1;
 .page-footer {
   display: flex;
   padding: 0;
-  margin: 0 auto;
+  margin: 40px 70px 30px 70px;
 }
 
-.footer-social {
+.footer-social-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
   width: 142px;
   height: 40px;
-  margin-left: 70px;
 }
 
 .footer-contacts-address {
@@ -322,18 +386,14 @@ flex-grow: 1;
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
-}
-
-.footer-contacts {
-  width: 331px;
-  height: 40px;
-  margin-left: 254px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 234px;
 }
 
 .footer-logo-htmlacademy {
-  width: 115px;
-  height: 33px;
-  margin-left: 236px;
+  margin-left: auto;
 }
 
 .catalog-inner {
