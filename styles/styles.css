@@ -240,7 +240,7 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0
+  margin: 0;
   paddind 0;
   margin-top: 64px;
 }
@@ -251,7 +251,7 @@ img {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin: 0
+  margin: 0;
   paddind 0;
   margin-top: -5px;
   margin-bottom: 64px;
@@ -474,7 +474,7 @@ img {
 }
 
 .breadcrumbs-link {
-  padding: 15px 15px;
+  padding: 15px;
   margin: 0;
 }
 
@@ -600,7 +600,7 @@ img {
 
 .hotel-list {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
   margin: 0;
   padding: 0;
@@ -725,14 +725,16 @@ img {
 
 .pagination-link {
   display: block;
-  box-sizing: border-box;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
   background-color: #82B3D3;
-  padding: 12px 24px;
-  margin: 0 auto;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 15px 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .pagination-item {
