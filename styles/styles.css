@@ -135,7 +135,7 @@ img {
   position: absolute;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 70%;
   background-color: #7DB54F;
   content: "12";
   font-weight: 400;
@@ -151,6 +151,7 @@ img {
   background-image: url("../images/header/search.svg");
   background-position: center;
   background-repeat: no-repeat;
+  margin-right: -1px;
 }
 
 .heart {
@@ -239,10 +240,11 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin-top: 102px;
+  margin-top: 103px;
 }
 
 .advantages-list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -263,7 +265,7 @@ img {
 
 .advantages-item:first-child:before {
   position: absolute;
-  left: 255px;
+  left: 170px;
   margin-top: 188px;
   width: 60px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -274,7 +276,7 @@ img {
 .advantages-item:last-child:before {
   position: absolute;
   margin-top: 188px;
-  right: 255px;
+  right: 170px;
   width: 60px;
   background-color: rgba(255, 255, 255, 0.3);
   height: 2px;
@@ -283,7 +285,7 @@ img {
 
 .advantages-item:nth-child(3):before {
   position: absolute;
-  left: 255px;
+  left: 170px;
   margin-top: 198px;
   width: 60px;
   background-color: rgba(0, 0, 0, 0.25);
@@ -294,7 +296,7 @@ img {
 .advantages-item:nth-child(5):before {
   position: absolute;
   margin-top: 198px;
-  right: 255px;
+  right: 170px;
   width: 60px;
   background-color: rgba(0, 0, 0, 0.25);
   height: 2px;
@@ -337,7 +339,7 @@ img {
 .background-second-2::before {
   position: absolute;
   margin-top: 198px;
-  left: 655px;
+  left: 570px;
   width: 60px;
   background-color: rgba(0, 0, 0, 0.25);
   height: 2px;
@@ -481,7 +483,7 @@ img {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .sending-form {
@@ -512,7 +514,7 @@ img {
   height: 52px;
   border: none;
   margin-top: 54px;
-  margin-bottom: 104px;
+  margin-bottom: 102px;
   cursor: pointer;
 }
 
@@ -542,7 +544,7 @@ img {
 .page-footer {
   display: flex;
   padding: 0;
-  margin: 46px 70px 30px 70px;
+  margin: 48px 70px 30px 70px;
 }
 
 .footer-social-list {
@@ -687,6 +689,7 @@ img {
   padding: 0;
   margin: 0;
   margin-left: 25px;
+  margin-top: -2px;
   list-style-type: none;
   background-image: url("../images/icons/bread-crumbs-home.svg");
   background-repeat: no-repeat;
@@ -698,6 +701,7 @@ img {
   background-image: url("../images/icons/bread-crumbs-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-left: -1px;
 }
 
 .breadcrumbs-link-hotels {
@@ -716,7 +720,7 @@ img {
 }
 
 .catalog-filter-title {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin: 0;
@@ -859,6 +863,9 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #E6E6E6;
+  margin-left: -1px;
+  box-sizing: border-box;
+  width: 48px;
 }
 
 .show-row-current {
@@ -871,6 +878,8 @@ img {
   background-position: center;
   border: 2px solid #E6E6E6;
   margin-left: 8px;
+  box-sizing: border-box;
+  width: 48px;
 }
 
 .show-line {
@@ -879,17 +888,20 @@ img {
   background-position: center;
   border: 2px solid #E6E6E6;
   margin-left: 8px;
+  box-sizing: border-box;
+  width: 48px;
 }
 
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
+  row-gap: 16px;
   margin: 0;
   padding: 0;
   margin-left: 70px;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 38px;
+  margin-top: 37px;
 }
 
 .pagination::before {
@@ -899,6 +911,7 @@ img {
   background-color: #E6E6E6;
   height: 1px;
   content: "";
+  margin-top: 2px;
 }
 
 .button-light:focus {
@@ -920,7 +933,7 @@ img {
   color: #000000;
   margin: 0;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 .hotel-option {
@@ -948,6 +961,7 @@ img {
   color: #333333;
   padding: 0;
   margin-left: auto;
+  margin-top: 16px;
 }
 
 .hotel-like-button {
@@ -1091,9 +1105,9 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-left: 61px;
-  margin-top: 36px;
-  margin-bottom: 60px;
+  margin-left: 63px;
+  margin-top: 42px;
+  margin-bottom: 58px;
 }
 
 .pagination-link {
@@ -1104,10 +1118,9 @@ img {
   color: #ffffff;
   background-color: #82B3D3;
   min-width: 60px;
-  min-height: 60px;
-  padding: 15px 0;
+  min-height: 6px;
+  padding: 12px 0;
   text-align: center;
-  box-sizing: border-box;
 }
 
 .pagination-link:hover {
@@ -1155,6 +1168,11 @@ img {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-left: 2px;
   margin-bottom: 1px;
+}
+
+.pagination-pass {
+  margin-top: 6px;
 }
