@@ -172,7 +172,7 @@
       </section>
     </footer>
 
-   <!--<div class="modal-container">
+   <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <a class="link-close">
           <svg class="close-button" aria-hidden="true" focusable="false" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,21 +181,30 @@
         </a>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <ul class="modal-list">
-              <li class="madal-item">
-                <label class="">Дата Заезда:
-                  <input type="date">
+                <label class="date-in">Дата Заезда:
+                  <input class="form-date-in" type="text" name="output" placeholder="27 апреля 2020">
                 </label>
-              </li>
-              <li class="madal-item">
-                <label class="">Дата Выезда:
-                  <input class="data">
+                <p class="text-date-in">Мы не можем отправить вас в прошлое.</p>
+                <label class="date-from">Дата Выезда:
+                  <input class="form-date-from" type="text" name="exit" placeholder="1 сентября 2023">
                 </label>
-              </li>
-            </ul>
+                <p class="text-date-from">На эти даты есть свободные номера. Пока есть.</p>
+                <div class="date-line">
+                <label class="date-in-people">Взрослые:
+                  <button class="button-minus" type="button"></button>
+                  <input class="number-pepole" type="text" name="output" placeholder="2">
+                  <button class="button-pluse" type="button"></button>
+                </label>
+                <label class="date-from-child">Дети:
+                  <button class="button-minus" type="button"></button>
+                  <input class="number-child" type="text" name="exit" placeholder="2">
+                  <button class="button-pluse" type="button"></button>
+                </label>
+                </div>
+                <button class="button-reservation" type="button">Найти</button>
         </section>
       </div>
-    </div> -->
+    </div>
   </body>
 
 </html>

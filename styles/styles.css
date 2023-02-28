@@ -1237,7 +1237,9 @@ img {
 
 .modal-auth {
   width: 717px;
-  min-height: 576px;
+  height: 576px;
+  border-radius: 30px;
+  box-sizing: border-box
 }
 
 .link-close {
@@ -1266,9 +1268,231 @@ img {
 }
 
 .modal-title {
+  margin: 0;
   padding: 0;
-  top: 64px;
-  margin-left: 70px;
+  margin-top: 22px;
+  margin-left: 30px;
   color: #000000;
   text-transform: uppercase;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.date-in {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-left: 31px;
+}
+
+.form-date-in {
+  margin: 0;
+  padding: 0;
+  width: 440px;
+  height: 48px;
+  margin-left: 19px;
+  border: none;
+  background: #F2F2F2;
+  border-radius: 4px;
+  margin-top: 67px;
+  background-image: url(..//images/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: right 22px center;
+}
+
+.text-date-in {
+  margin: 0;
+  padding: 0;
+  margin-left: 187px;
+  margin-top: 2px;
+  color: #FF5757;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.date-from {
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.date-line {
+  display: flex;
+  margin-top: 35px;
+}
+
+.date-in-people {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 30px;
+  display: flex;
+}
+
+.date-from-child {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 90px;
+  display: flex;
+}
+
+.form-date-from {
+  margin: 0;
+  padding: 0;
+  width: 440px;
+  height: 48px;
+  margin-top: 25px;
+  margin-left: 14px;
+  border: none;
+  background: #F2F2F2;
+  border-radius: 4px;
+  background-image: url(..//images/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: right 22px center;
+}
+
+.text-date-from {
+  margin: 0;
+  padding: 0;
+  margin-left: 187px;
+  margin-top: 2px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.form-date-in::placeholder {
+  color: #000000;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+}
+
+.form-date-from::placeholder {
+  margin: 0;
+  color: #000000;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+}
+
+.button-minus {
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-image: url(../images/icons/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 46px;
+  margin-top: -10px;
+}
+
+.button-pluse {
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-image: url(../images/icons/pluse.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -10px;
+}
+
+.number-pepole {
+  border: none;
+  width: 23px;
+  height: 46px;
+  background-color: #F2F2F2;
+  margin-top: -10px;
+}
+
+.number-child {
+  border: none;
+  width: 23px;
+  height: 46px;
+  background-color: #F2F2F2;
+  margin-top: -10px;
+}
+
+.number-child::placeholder {
+  color: #000000;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 7px;
+}
+
+.number-pepole::placeholder {
+  color: #000000;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 7px;
+}
+
+.button-reservation {
+  min-width: 577px;
+  min-height: 60px;
+  margin-left: 30px;
+  margin-top: 48px;
+  background: #83B3D3;
+  border: none;
+  border-radius: 10px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button-reservation:hover {
+  background-color: #68A2CA;
+}
+
+.button-reservation:focus {
+  background-color: #68A2CA;
+}
+
+.button-reservation:active {
+  color: #dcdcdc;
+}
+
+.modal-container-close {
+  display: none;
 }
