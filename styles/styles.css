@@ -708,6 +708,19 @@ img {
   margin-left: 2px;
 }
 
+.breadcrumbs-link-hotels:hover {
+  color: rgba(255, 255, 255, 0.6);
+  ;
+}
+
+.breadcrumbs-link-hotels:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link-hotels:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-link {
   padding: 11px;
   margin: 0;
@@ -808,8 +821,17 @@ img {
   cursor: pointer;
 }
 
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .button-reset:focus {
-  border: 3px solid #68A2CA;
+  outline: solid;
+  outline-color: #82B3D3;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-number {
@@ -835,16 +857,31 @@ img {
 .select-control {
   display: block;
   margin: 0;
-  padding: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   width: 292px;
   height: 49px;
-  padding-left: 20px;
+  padding: 12px 20px;
+  padding-right: 40px;
   margin-left: 200px;
   margin-right: 70px;
+  appearance: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-image: url(../images/icons/select-control.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  outline: none;
+}
+
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus {
+  border-color: #3F5E72;
 }
 
 .button-light {
@@ -916,6 +953,10 @@ img {
 
 .button-light:focus {
   border: 3px solid #68A2CA;
+}
+
+.button-light:hover {
+  border: 3px solid #000000;
 }
 
 .hotel-card {
@@ -1175,4 +1216,59 @@ img {
 
 .pagination-pass {
   margin-top: 6px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.modal-auth {
+  width: 717px;
+  min-height: 576px;
+}
+
+.link-close {
+  position: absolute;
+  border-radius: 50%;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #E6E6E6;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 19px;
+  right: 19px;
+}
+
+.close-button:focus {
+  border-color: #68A2CA;
+}
+
+.close-button:active {
+  color: #A0A0A0;
+}
+
+.modal-title {
+  padding: 0;
+  top: 64px;
+  margin-left: 70px;
+  color: #000000;
+  text-transform: uppercase;
 }
