@@ -1529,7 +1529,7 @@ img {
   border: none;
   background: #F2F2F2;
   border-radius: 4px;
-  margin-top: 67px;
+  margin-top: 64px;
   background-image: url(..//images/icons/calendar.svg);
   background-repeat: no-repeat;
   background-position: right 22px center;
@@ -1539,7 +1539,7 @@ img {
   margin: 0;
   padding: 0;
   margin-left: 187px;
-  margin-top: 2px;
+  margin-top: 3px;
   color: #FF5757;
   font-weight: 400;
   font-size: 16px;
@@ -1577,7 +1577,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 90px;
+  margin-left: 86px;
   display: flex;
 }
 
@@ -1648,9 +1648,8 @@ img {
 }
 
 .button-pluse {
-  width: 40px;
+  width: 45px;
   height: 48px;
-  padding: 14px 10px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
@@ -1660,8 +1659,22 @@ img {
   margin-top: -10px;
 }
 
+.button-minus-child {
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-image: url(../images/icons/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 83px;
+  margin-top: -10px;
+}
+
 .number-pepole {
-  font-family: 'PT Sans';
+  font:inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1674,7 +1687,7 @@ img {
 }
 
 .number-child {
-  font-family: 'PT Sans';
+  font:inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1688,7 +1701,7 @@ img {
 
 .number-child::placeholder {
   color: #000000;
-  font-family: 'PT Sans';
+  font:inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1698,7 +1711,7 @@ img {
 
 .number-pepole::placeholder {
   color: #000000;
-  font-family: 'PT Sans';
+  font:inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1714,7 +1727,7 @@ img {
   background: #83B3D3;
   border: none;
   border-radius: 10px;
-  font-family: 'PT Sans';
+  font:inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1738,6 +1751,21 @@ img {
   color: #dcdcdc;
 }
 
+.exclamation::before {
+  position: absolute;
+  left: 464px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  content: "i";
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #83B3D3;
+}
+
+
 .modal-container-close {
-  display: none;
+  
 }
