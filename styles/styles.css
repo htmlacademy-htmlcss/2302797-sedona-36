@@ -792,12 +792,8 @@ img {
   border-radius: 4px;
 }
 
-.control:hover .control-mark {
-  border: 3px solid #83B3D3;
-  text-shadow: #333333;
-}
-
-.control-input:disabled + .control-mark {
+.control-input:focus + .control-mark {
+  outline-color: #68A2CA;
   border: 3px solid #83B3D3;
 }
 
@@ -1029,7 +1025,6 @@ img {
 }
 
 .button-reset:focus {
-  outline: solid;
   outline-color: #82B3D3;
 }
 
@@ -1087,7 +1082,6 @@ img {
 }
 
 .select-control:focus {
-  background-color: #68A2CA;
   outline-color: #68A2CA;
 }
 
@@ -1498,7 +1492,7 @@ img {
   margin-left: 30px;
   color: #000000;
   text-transform: uppercase;
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1506,17 +1500,17 @@ img {
 }
 
 .date-in {
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   margin: 0;
   padding: 0;
-  margin-left: 31px;
+  margin-left: 30px;
 }
 
 .form-date-in {
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1529,7 +1523,7 @@ img {
   border: none;
   background: #F2F2F2;
   border-radius: 4px;
-  margin-top: 64px;
+  margin-top: 65px;
   background-image: url(..//images/icons/calendar.svg);
   background-repeat: no-repeat;
   background-position: right 22px center;
@@ -1550,7 +1544,7 @@ img {
   margin: 0;
   padding: 0;
   margin-left: 30px;
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1562,7 +1556,7 @@ img {
 }
 
 .date-in-people {
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1572,12 +1566,12 @@ img {
 }
 
 .date-from-child {
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 86px;
+  margin-left: 70px;
   display: flex;
 }
 
@@ -1614,7 +1608,7 @@ img {
 
 .form-date-in::placeholder {
   color: #000000;
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1625,7 +1619,7 @@ img {
 .form-date-from::placeholder {
   margin: 0;
   color: #000000;
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1639,12 +1633,34 @@ img {
   padding: 14px 10px;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
-  background-image: url(../images/icons/minus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 4px 0px 0px 4px;
   margin-left: 46px;
   margin-top: -10px;
+  position: relative;
+}
+
+.button-minus:focus {
+  outline-color: #68A2CA;
+}
+
+.button-pluse:focus {
+  outline-color: #68A2CA;
+}
+
+.button-minus-child:focus {
+  outline-color: #68A2CA;
+}
+
+.button-pluse-svg:hover {
+  color: #000000;
+}
+
+.button-minus-svg:hover {
+  color: #000000;
+}
+
+.button-minus-child-svg:hover {
+  color: #000000;
 }
 
 .button-pluse {
@@ -1652,11 +1668,17 @@ img {
   height: 48px;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
-  background-image: url(../images/icons/pluse.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 0px 4px 4px 0px;
   margin-top: -10px;
+  position: relative;
+}
+
+.button-pluse-svg {
+  position: absolute;
+  left: 18px;
+  bottom: 17px;
+  content: "";
+  color: #7561574D;
 }
 
 .button-minus-child {
@@ -1665,16 +1687,47 @@ img {
   padding: 14px 10px;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
-  background-image: url(../images/icons/minus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 83px;
+  margin-left: 84px;
+  border-radius: 4px 0px 0px 4px;
+  background-color: #F2F2F2;
   margin-top: -10px;
+  position: relative;
+}
+
+.button-minus-svg {
+  position: absolute;
+  left: 13px;
+  top: 23px;
+  content: "";
+  color: #7561574D;
+}
+
+.button-minus-child-svg {
+  position: absolute;
+  left: 13px;
+  top: 23px;
+  content: "";
+  color: #7561574D;
+}
+
+.form-date-in:focus {
+  outline-color: #68A2CA;
+}
+
+.form-date-from:focus {
+  outline-color: #68A2CA;
+}
+
+.form-date-in:active {
+  outline-color: #000000;
+}
+
+.form-date-from:active {
+  outline-color: #000000;
 }
 
 .number-pepole {
-  font:inherit;
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1687,7 +1740,7 @@ img {
 }
 
 .number-child {
-  font:inherit;
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1701,7 +1754,7 @@ img {
 
 .number-child::placeholder {
   color: #000000;
-  font:inherit;
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1711,12 +1764,20 @@ img {
 
 .number-pepole::placeholder {
   color: #000000;
-  font:inherit;
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   padding-left: 7px;
+}
+
+.number-child:focus {
+  outline-color: #68A2CA;
+}
+
+.number-pepole:focus {
+  outline-color: #68A2CA;
 }
 
 .button-reservation {
@@ -1727,7 +1788,7 @@ img {
   background: #83B3D3;
   border: none;
   border-radius: 10px;
-  font:inherit;
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1751,21 +1812,69 @@ img {
   color: #dcdcdc;
 }
 
-.exclamation::before {
+.modal-container-close {}
+
+.tooltip {
   position: absolute;
-  left: 464px;
-  width: 26px;
-  height: 26px;
-  border-radius: 50px;
-  content: "i";
-  font-weight: 400;
-  font-size: 18px;
-  color: #FFFFFF;
-  text-align: center;
-  background-color: #83B3D3;
+  margin-left: 50px;
 }
 
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  display: block;
+}
 
-.modal-container-close {
-  
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  padding: 19px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  height: 143px;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 17px;
+  margin-left: -105px;
+  z-index: 1;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.form-label-icon {
+  position: relative;
+  padding-right: 16px;
+}
+
+.tooltip-text:after {
+  content: '';
+  background-image: url("../images/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
