@@ -89,7 +89,7 @@ img {
 
 .navigation-link-current::before {
   position: absolute;
-  top: 63px;
+  top: 62px;
   width: 93px;
   background-color: #756257;
   height: 2px;
@@ -98,7 +98,7 @@ img {
 
 .navigation-link-current-one::before {
   position: absolute;
-  top: 63px;
+  top: 62px;
   width: 68px;
   background-color: #756257;
   height: 2px;
@@ -164,17 +164,20 @@ img {
 
 .button-entry {
   display: inline-block;
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #756157;
+  background: #756157;
+  border-radius: 4px;
   text-align: center;
   text-transform: uppercase;
   padding: 8px 34px;
   margin-left: 26px;
   cursor: pointer;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .button-entry:hover {
@@ -183,6 +186,7 @@ img {
 
 .button-entry:focus {
   background-color: #615048;
+  outline-color: #615048;
 }
 
 .button-entry:active {
@@ -419,20 +423,23 @@ img {
   color: #333333;
   margin: 0;
   padding: 0;
-  margin-top: -5px;
+  margin-top: -4px;
   margin-bottom: 54px;
 }
 
 .button-search {
   color: #FFFFFF;
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #756157;
+  background: #756157;
+  border-radius: 4px;
   display: block;
-  padding: 12px 50px;
+  padding: 8px 50px;
   margin: 54px 412px 96px 412px;
   cursor: pointer;
 }
@@ -443,6 +450,7 @@ img {
 
 .button-search:focus {
   background-color: #615048;
+  outline-color: #615048;
 }
 
 .button-search:active {
@@ -463,7 +471,7 @@ img {
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-top: 98px;
+  padding-top: 97px;
 }
 
 .subscribe {
@@ -483,7 +491,7 @@ img {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 21px;
+  margin-top: 19px;
 }
 
 .sending-form {
@@ -498,18 +506,31 @@ img {
   margin-left: 258px;
   margin-top: 54px;
   border: none;
-  background-color: #F2F2F2;
+  background: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.field::placeholder {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 20px;
 }
 
 .button-hotel-search {
   display: inline-block;
   color: #FFFFFF;
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #82B3D3;
+  background: #82B3D3;
+  border-radius: 0px 4px 4px 0px;
   width: 232px;
   height: 52px;
   border: none;
@@ -524,6 +545,7 @@ img {
 
 .button-hotel-search:focus {
   background-color: #68A2CA;
+  outline-color: #68A2CA;
 }
 
 .button-hotel-search:active {
@@ -544,7 +566,7 @@ img {
 .page-footer {
   display: flex;
   padding: 0;
-  margin: 48px 70px 30px 70px;
+  margin: 47px 70px 30px 70px;
 }
 
 .footer-social-list {
@@ -607,7 +629,7 @@ img {
 
 .logo-academy {
   position: absolute;
-  top: 2px;
+  top: 3px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -668,6 +690,7 @@ img {
   padding: 0;
   margin: 0;
   margin-left: 70px;
+  margin-top: -2px;
 }
 
 .breadcrumbs {
@@ -689,7 +712,7 @@ img {
   padding: 0;
   margin: 0;
   margin-left: 25px;
-  margin-top: -2px;
+  margin-top: px;
   list-style-type: none;
   background-image: url("../images/icons/bread-crumbs-home.svg");
   background-repeat: no-repeat;
@@ -701,7 +724,6 @@ img {
   background-image: url("../images/icons/bread-crumbs-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: -1px;
 }
 
 .breadcrumbs-link-hotels {
@@ -729,7 +751,7 @@ img {
 .catalog-filter {
   display: flex;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 42px;
 }
 
 .catalog-filter-title {
@@ -751,13 +773,186 @@ img {
 }
 
 .catalog-filter-item {
-  margin-top: 16px;
+  margin-top: 18px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  border: 3px solid #83B3D3;
+  text-shadow: #333333;
+}
+
+.control-input:disabled + .control-mark {
+  border: 3px solid #83B3D3;
+}
+
+.control-label:hover {
+  color: #d3d3d3
+}
+
+.control-label:active {
+  color: #d3d3d3
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url(../images/icons/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url(../images/icons/round.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .price {
-  width: 288px;
-  height: 104px;
+  width: 300px;
   margin-left: 140px;
+}
+
+.range-input-left {
+  padding: 0;
+  margin: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  background: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
+  width: 143px;
+  height: 48px;
+  margin-top: 32px;
+  border: none;
+  margin-left: 138px;
+  background-image: url(../images/input-text-left.svg);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.range-input-left::placeholder {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.range-input-left:focus {
+  outline-color: #83B3D3;
+}
+
+.range-input-right:focus {
+  outline-color: #83B3D3;
+}
+
+.range-input-right {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  background: #F2F2F2;
+  border-radius: 0px 4px 4px 0px;
+  width: 143px;
+  height: 48px;
+  margin-top: 32px;
+  margin-left: -1px;
+  border: none;
+  background-image: url(../images/input-text-right.svg);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.range-input-right::placeholder {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding: 12px 20px;
+}
+
+.range-scale {
+  position: relative;
+  width: 278px;
+  height: 4px;
+  background-color: #808080;
+  margin-top: 44px;
+  margin-left: 148px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-apply:focus {
+  background-color: #68A2CA;
+  outline-color: #68A2CA;
+}
+
+.button-apply:active {
+  border-color: #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 .control-input {
@@ -768,17 +963,21 @@ img {
 
 .button-catalog {
   display: block;
-  margin-left: 70px;
+  margin-left: 56px;
 }
 
 .button-apply {
   display: inline-block;
-  font-weight: 400;
+  font: inherit;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #82B3D3;
+  background: #82B3D3;
+  border-radius: 4px;
   text-align: center;
+  align-items: center;
   text-transform: uppercase;
   width: 191px;
   height: 36px;
@@ -792,7 +991,8 @@ img {
 }
 
 .button-apply:focus {
-  background-color: #68A2CA;
+  outline: solid;
+  outline-color: #82B3D3;
 }
 
 .button-apply:active {
@@ -807,7 +1007,9 @@ img {
 
 .button-reset {
   display: inline-block;
-  font-weight: 400;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -817,8 +1019,9 @@ img {
   width: 191px;
   height: 36px;
   border: none;
-  margin-top: 33px;
+  margin-top: 32px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .button-reset:hover {
@@ -857,13 +1060,16 @@ img {
 .select-control {
   display: block;
   margin: 0;
+  font: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   width: 292px;
   height: 49px;
-  padding: 12px 20px;
+  padding-left: 19px;
+  padding-top: 4px;
   padding-right: 40px;
   margin-left: 200px;
   margin-right: 70px;
@@ -881,7 +1087,8 @@ img {
 }
 
 .select-control:focus {
-  border-color: #3F5E72;
+  background-color: #68A2CA;
+  outline-color: #68A2CA;
 }
 
 .button-light {
@@ -890,9 +1097,10 @@ img {
   display: block;
   color: #000000;
   text-align: center;
-  width: 46px;
-  height: 46px;
+  width: 47px;
+  height: 47px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .show-row {
@@ -900,7 +1108,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #E6E6E6;
-  margin-left: -1px;
   box-sizing: border-box;
   width: 48px;
 }
@@ -936,7 +1143,7 @@ img {
   row-gap: 16px;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
+  margin-left: 69px;
   margin-bottom: 38px;
   margin-top: 37px;
 }
@@ -1008,12 +1215,15 @@ img {
 .hotel-like-button {
   display: inline-block;
   color: #FFFFFF;
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #82B3D3;
+  background: #82B3D3;
+  border-radius: 4px;
   border: none;
   margin: 0;
   padding: 8px 10px;
@@ -1023,12 +1233,15 @@ img {
 .hotel-card-button {
   display: inline-block;
   color: #FFFFFF;
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #756157;
+  background: #756157;
+  border-radius: 4px;
   margin: 0;
   padding: 8px 26px;
   cursor: pointer;
@@ -1040,6 +1253,7 @@ img {
 
 .hotel-card-button:focus {
   background-color: #615048;
+  outline-color: #615048;
 }
 
 .hotel-card-button:active {
@@ -1054,12 +1268,15 @@ img {
 
 .like {
   color: #FFFFFF;
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #7DB54F;
+  background: #7DB54F;
+  border-radius: 4px;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -1071,6 +1288,7 @@ img {
 
 .hotel-like-button:focus {
   background-color: #68A2CA;
+  outline-color: #68A2CA;
 }
 
 .hotel-like-button:active {
@@ -1089,6 +1307,7 @@ img {
 
 .like:focus {
   background-color: #6C9E42;
+  outline-color: #6C9E42;
 }
 
 .like:active {
@@ -1102,11 +1321,14 @@ img {
 }
 
 .hotel-rating {
+  font: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
-  background-color: #F2F2F2;
+  background: #F2F2F2;
+  border-radius: 4px;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -1124,7 +1346,7 @@ img {
 }
 
 .four-stars {
-  width: 89px;
+  width: 88px;
   height: auto;
 }
 
@@ -1147,7 +1369,7 @@ img {
   padding: 0;
   display: flex;
   margin-left: 63px;
-  margin-top: 42px;
+  margin-top: 40px;
   margin-bottom: 58px;
 }
 
@@ -1162,6 +1384,7 @@ img {
   min-height: 6px;
   padding: 12px 0;
   text-align: center;
+  border-radius: 4px;
 }
 
 .pagination-link:hover {
@@ -1170,6 +1393,7 @@ img {
 
 .pagination-link:focus {
   background-color: #68A2CA;
+  outline-color: #68A2CA;
 }
 
 .pagination-link:active {
@@ -1292,6 +1516,11 @@ img {
 }
 
 .form-date-in {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
   width: 440px;
@@ -1353,6 +1582,11 @@ img {
 }
 
 .form-date-from {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
   width: 440px;
@@ -1427,6 +1661,11 @@ img {
 }
 
 .number-pepole {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   border: none;
   width: 23px;
   height: 46px;
@@ -1435,6 +1674,11 @@ img {
 }
 
 .number-child {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   border: none;
   width: 23px;
   height: 46px;
@@ -1487,6 +1731,7 @@ img {
 
 .button-reservation:focus {
   background-color: #68A2CA;
+  outline-color: #68A2CA;
 }
 
 .button-reservation:active {
