@@ -50,6 +50,30 @@ img {
   vertical-align: top;
 }
 
+button:disabled {
+  background-color: #E5E5E5;
+  outline: none;
+  cursor: default;
+}
+
+input:disabled {
+  background-color: #E5E5E5;
+  outline: none;
+  cursor: default;
+}
+
+option:disabled {
+  background-color: #E5E5E5;
+  outline: none;
+  cursor: default;
+}
+
+select:disabled {
+  background-color: #E5E5E5;
+  outline: none;
+  cursor: default;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -65,6 +89,18 @@ img {
 
 .main-container {
   flex-grow: 1;
+  position: relative;
+}
+
+.welcome-content::after {
+  position: absolute;
+  content: "";
+  width: 101%;
+  height: 57px;
+  left: 0;
+  background-image: url("../images/gallary/ladder.svg");
+  border: none;
+  top: 429px;
 }
 
 .page-header {
@@ -191,12 +227,6 @@ img {
 
 .button-entry:active {
   background-color: #756157;
-}
-
-.button-entry:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
 }
 
 .main-container {
@@ -457,12 +487,6 @@ img {
   background-color: #756157;
 }
 
-.button-search:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
-}
-
 .subscribe-title {
   font-weight: 700;
   font-size: 30px;
@@ -471,7 +495,7 @@ img {
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-top: 97px;
+  padding-top: 99px;
 }
 
 .subscribe {
@@ -550,12 +574,6 @@ img {
 
 .button-hotel-search:active {
   background-color: #82B3D3;
-}
-
-.button-hotel-search:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
 }
 
 .link {
@@ -684,13 +702,15 @@ img {
 }
 
 .catalog-title {
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   padding: 0;
   margin: 0;
   margin-left: 70px;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .breadcrumbs {
@@ -751,7 +771,7 @@ img {
 .catalog-filter {
   display: flex;
   padding: 0;
-  margin-top: 42px;
+  margin-top: 40px;
 }
 
 .catalog-filter-title {
@@ -768,7 +788,7 @@ img {
   margin: 0;
   padding: 0;
   margin-left: 70px;
-  margin-top: 32px;
+  margin-top: 33px;
   width: 151px;
 }
 
@@ -838,10 +858,44 @@ img {
   margin-left: 140px;
 }
 
+.range-wrapper-inputs {
+  position: relative;
+}
+
+.prise-text-right{
+  position: absolute;
+  content: "до";
+  color: #000000;
+  opacity: 0.3;
+  top: 45px;
+  right: 33px;
+  transform: rotateY('-50%');
+  font: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.prise-text-left {
+  position: absolute;
+  content: "от";
+  color: #000000;
+  opacity: 0.3;
+  top: 45px;
+  right: 178px;
+  transform: rotateY('-50%');
+  font: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .range-input-left {
   padding: 0;
   margin: 0;
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -852,14 +906,12 @@ img {
   height: 48px;
   margin-top: 32px;
   border: none;
-  margin-left: 138px;
-  background-image: url(../images/input-text-left.svg);
-  background-repeat: no-repeat;
-  background-position: center right 20px;
+  margin-left: 140px;
+  margin-right: -2px;
 }
 
 .range-input-left::placeholder {
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -878,7 +930,7 @@ img {
 }
 
 .range-input-right {
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -892,13 +944,10 @@ img {
   margin-top: 32px;
   margin-left: -1px;
   border: none;
-  background-image: url(../images/input-text-right.svg);
-  background-repeat: no-repeat;
-  background-position: center right 20px;
 }
 
 .range-input-right::placeholder {
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -911,7 +960,7 @@ img {
   position: relative;
   width: 278px;
   height: 4px;
-  background-color: #808080;
+  background-color: #696969;
   margin-top: 44px;
   margin-left: 148px;
 }
@@ -995,12 +1044,6 @@ img {
   background-color: #82B3D3;
 }
 
-.button-apply:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
-}
-
 .button-reset {
   display: inline-block;
   font-family: 'PT Sans';
@@ -1064,16 +1107,16 @@ img {
   width: 292px;
   height: 49px;
   padding-left: 19px;
-  padding-top: 4px;
+  padding-top: 2px;
   padding-right: 40px;
   margin-left: 200px;
   margin-right: 70px;
   appearance: none;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  background-image: url(../images/icons/select-control.svg);
+  background-image: url("../images/icons/select-control.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   outline: none;
 }
 
@@ -1139,7 +1182,7 @@ img {
   padding: 0;
   margin-left: 69px;
   margin-bottom: 38px;
-  margin-top: 37px;
+  margin-top: 39px;
 }
 
 .pagination::before {
@@ -1254,12 +1297,6 @@ img {
   background-color: #756157;
 }
 
-.hotel-card-button:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
-}
-
 .like {
   color: #FFFFFF;
   font: inherit;
@@ -1289,12 +1326,6 @@ img {
   background-color: #82B3D3;
 }
 
-.hotel-like-button:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
-}
-
 .like:hover {
   background-color: #6C9E42;
 }
@@ -1306,12 +1337,6 @@ img {
 
 .like:active {
   background-color: #7DB54F;
-}
-
-.like:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
 }
 
 .hotel-rating {
@@ -1392,12 +1417,6 @@ img {
 
 .pagination-link:active {
   background-color: #82B3D3;
-}
-
-.pagination-linkn:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
 }
 
 .pagination-item {
@@ -1497,6 +1516,11 @@ img {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .date-in {
@@ -1718,11 +1742,7 @@ img {
   outline-color: #68A2CA;
 }
 
-.form-date-in:active {
-  outline-color: #000000;
-}
-
-.form-date-from:active {
+input::placeholder-shown {
   outline-color: #000000;
 }
 
@@ -1812,10 +1832,6 @@ img {
   color: #dcdcdc;
 }
 
-.modal-container-close {
-  display: none;
-}
-
 .tooltip {
   position: absolute;
   margin-left: 50px;
@@ -1879,4 +1895,8 @@ img {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.modal-container-close {
+  display: none;
 }
