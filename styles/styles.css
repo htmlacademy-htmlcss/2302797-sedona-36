@@ -1585,7 +1585,7 @@ img {
   padding: 0;
   width: 440px;
   height: 48px;
-  margin-top: 25px;
+  margin-top: 24px;
   margin-left: 14px;
   border: none;
   background: #F2F2F2;
@@ -1599,7 +1599,7 @@ img {
   margin: 0;
   padding: 0;
   margin-left: 187px;
-  margin-top: 2px;
+  margin-top: 4px;
   color: #000000;
   font-weight: 400;
   font-size: 16px;
@@ -1813,6 +1813,7 @@ img {
 }
 
 .modal-container-close {
+  display: none;
 }
 
 .tooltip {
@@ -1852,8 +1853,8 @@ img {
   height: 143px;
   box-sizing: border-box;
   position: absolute;
-  margin-top: 17px;
-  margin-left: -105px;
+  margin-top: 42px;
+  margin-left: 309px;
   z-index: 1;
 }
 
