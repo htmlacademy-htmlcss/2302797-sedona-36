@@ -1812,7 +1812,8 @@ img {
   color: #dcdcdc;
 }
 
-.modal-container-close {}
+.modal-container-close {
+}
 
 .tooltip {
   position: absolute;
