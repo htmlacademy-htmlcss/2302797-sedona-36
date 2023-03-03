@@ -1753,10 +1753,6 @@ input[type="number"]::-webkit-inner-spin-button {
   outline-color: #68A2CA;
 }
 
-input:placeholder-shown {
-  outline-color: #000;
-}
-
 .number-pepole {
   font: inherit;
   font-style: normal;
