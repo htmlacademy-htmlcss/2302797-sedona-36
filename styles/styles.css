@@ -48,6 +48,8 @@ fieldset {
 img {
   display: inline-block;
   vertical-align: top;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 button:disabled {
@@ -82,6 +84,7 @@ select:disabled {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -1113,6 +1116,7 @@ select:disabled {
   padding-right: 40px;
   margin-left: 200px;
   margin-right: 70px;
+  -webkit-appearance: none;
   appearance: none;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -1237,7 +1241,6 @@ select:disabled {
 .grid {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 36px 37px;
   column-gap: 20px;
   row-gap: 16px;
 }
@@ -1266,6 +1269,7 @@ select:disabled {
   border-radius: 4px;
   border: none;
   margin: 0;
+  margin-top: -19px;
   padding: 8px 10px;
   cursor: pointer;
 }
@@ -1283,6 +1287,7 @@ select:disabled {
   background: #756157;
   border-radius: 4px;
   margin: 0;
+  margin-top: -19px;
   padding: 8px 26px;
   cursor: pointer;
 }
@@ -1309,9 +1314,10 @@ select:disabled {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  background: #7bd54f;
+  background: #7DB54F;
   border-radius: 4px;
   margin: 0;
+  margin-top: -19px;
   padding: 0;
   cursor: pointer;
 }
@@ -1393,7 +1399,7 @@ select:disabled {
   display: flex;
   flex-wrap: wrap;
   margin-left: 61px;
-  margin-top: 40px;
+  margin-top: 42px;
   margin-bottom: 60px;
 }
 
@@ -1613,7 +1619,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 0;
   min-width: 440px;
   min-height: 48px;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-left: 14px;
   border: none;
   background: #F2F2F2;
@@ -1632,6 +1638,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  margin-top: 2px;
 }
 
 .form-date-in::placeholder {
@@ -1868,14 +1875,15 @@ input:placeholder-shown {
   text-transform: none;
   padding: 19px 18px 18px 22px;
   border-radius: 10px;
-  display: block;
   width: 256px;
   min-height: 143px;
   box-sizing: border-box;
   position: absolute;
-  margin-top: 42px;
-  margin-left: 309px;
+  margin-top: 15px;
+  margin-left: -107px;
+  display: non;
   z-index: 1;
+  cursor: pointer;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
