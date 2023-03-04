@@ -92,18 +92,6 @@ select:disabled {
 
 .main-container {
   flex-grow: 1;
-  position: relative;
-}
-
-.welcome-content::after {
-  position: absolute;
-  content: "";
-  width: 101%;
-  height: 57px;
-  left: 0;
-  background-image: url("../images/gallary/ladder.svg");
-  border: none;
-  top: 429px;
 }
 
 .page-header {
@@ -118,9 +106,8 @@ select:disabled {
 
 .logo {
   margin-left: 70px;
-  position: relative;
   margin-bottom: -6px;
-  z-index: 1;
+  position: relative;
 }
 
 .navigation-item {
@@ -242,6 +229,18 @@ select:disabled {
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
+}
+
+.welcome-content::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 58px;
+  left: 0;
+  background-image: url("../images/gallary/ladder.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 51px;
 }
 
 .welcome-content-logo {
