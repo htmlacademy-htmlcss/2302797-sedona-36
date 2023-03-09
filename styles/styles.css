@@ -96,8 +96,9 @@ img {
 
 .navigation-link-current::before {
   position: absolute;
-  top: 63px;
-  width: 93px;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
   background-color: #756257;
   height: 2px;
   content: "";
@@ -105,8 +106,9 @@ img {
 
 .navigation-link-current-one::before {
   position: absolute;
-  top: 63px;
-  min-width: 68px;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
   background-color: #756257;
   height: 2px;
   content: "";
@@ -120,6 +122,7 @@ img {
   text-align: center;
   margin: 0;
   padding: 20px 16px;
+  position: relative;
 }
 
 .navigation-home {
@@ -149,7 +152,7 @@ img {
   font-size: 10px;
   color: #FFF;
   margin: 5px 4px;
-  top: 6px;
+  bottom: 16px;
   margin-left: -3px;
 }
 
@@ -219,7 +222,7 @@ img {
   background-image: url("../images/gallary/ladder.svg");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 51px;
+  padding-top: 49px;
 }
 
 .welcome-content-logo {
@@ -449,7 +452,7 @@ img {
   border-radius: 4px;
   display: block;
   padding: 8px 50px;
-  margin: 52px 412px 96px;
+  margin: 52px 411px 96px;
   cursor: pointer;
 }
 
