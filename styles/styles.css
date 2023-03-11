@@ -46,12 +46,7 @@ img {
 
 .button:disabled {
   background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
-}
-
-.option:disabled {
-  color: rgba(0, 0, 0, 0.3);
+  color: #FFFFFF;
   outline: none;
   cursor: default;
 }
@@ -86,7 +81,11 @@ img {
 .logo {
   margin-left: 70px;
   margin-bottom: -10px;
-  position: relative;
+  z-index: 1;
+}
+
+.logo:focus {
+  outline-color: #83B3D3;
 }
 
 .navigation-item {
@@ -205,24 +204,25 @@ img {
 
 .welcome-content {
   color: #FFF;
-  background-color: #000;
+  background-color: #68A2CA;
   background-image: url("../images/gallary/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
+  position: relative;
 }
 
 .welcome-content::after {
   position: absolute;
   content: "";
-  width: 100%;
+  min-width: 100%;
   height: 58px;
   left: 0;
   background-image: url("../images/gallary/ladder.svg");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 49px;
+  padding-top: 51px;
 }
 
 .welcome-content-logo {
@@ -807,19 +807,31 @@ img {
   height: 20px;
   background-color: #FFF;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .control-input:focus + .control-mark {
-  outline-color: #68A2CA;
-  border: 3px solid #83B3D3;
+  border: 3px solid #68A2CA;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.3;
+}
+
+.control-input:active + .control-mark {
+  opacity: 0.3;
+}
+
+.control-label:disabled {
+  opacity: 0.3;
 }
 
 .control-label:hover {
-  color: #d3d3d3
+  opacity: 0.3;
 }
 
 .control-label:active {
-  color: #d3d3d3
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -851,8 +863,8 @@ img {
 }
 
 .price {
-  width: 300px;
-  margin-left: 140px;
+  min-width: 330px;
+  margin-left: 138px;
 }
 
 .range-wrapper-inputs {
@@ -865,7 +877,7 @@ img {
   color: #000;
   opacity: 0.3;
   top: 45px;
-  right: 33px;
+  right: 62px;
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -879,7 +891,7 @@ img {
   color: #000;
   opacity: 0.3;
   top: 45px;
-  right: 178px;
+  right: 207px;
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -904,9 +916,12 @@ img {
   width: 143px;
   height: 48px;
   margin-top: 32px;
+  padding-left: 20px;
+  padding-right: 40px;
   border: none;
-  margin-left: 140px;
-  margin-right: -3px;
+  margin-left: 139px;
+  margin-right: -2px;
+  box-sizing: border-box;
 }
 
 .range-input-left::placeholder {
@@ -916,7 +931,6 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000;
-  padding: 12px 20px;
   cursor: pointer;
 }
 
@@ -934,7 +948,10 @@ img {
   height: 48px;
   margin-top: 32px;
   margin-left: -1px;
+  padding-left: 20px;
+  padding-right: 40px;
   border: none;
+  box-sizing: border-box;
 }
 
 .range-input-right:focus {
@@ -948,7 +965,14 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000;
-  padding: 12px 20px;
+}
+
+.range-input-right:not(:placeholder-shown):focus  {
+  outline-color:#000; ;
+}
+
+.range-input-left:not(:placeholder-shown):focus  {
+  outline-color:#000; ;
 }
 
 .range-scale {
@@ -994,7 +1018,7 @@ img {
 
 .button-catalog {
   display: block;
-  margin-left: 56px;
+  margin-left: 27px;
 }
 
 .button-apply:active {
@@ -1038,6 +1062,11 @@ img {
   outline-color: #82B3D3;
 }
 
+.button-reset:disabled {
+  color: #FFF;
+  opacity: 0.1;
+}
+
 .button-reset {
   display: inline-block;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1069,7 +1098,7 @@ img {
   margin: 0;
   padding: 0;
   margin-left: 70px;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .search-hotels {
@@ -1119,6 +1148,12 @@ img {
 .select-control:focus:not(:placeholder-shown) {
   outline: none;
   border-color: #000;
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #E5E5E5;
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .button-light {
@@ -1178,7 +1213,7 @@ img {
   padding: 0;
   margin-left: 69px;
   margin-bottom: 38px;
-  margin-top: 38px;
+  margin-top: 40px;
 }
 
 .button-light:focus {
@@ -1208,8 +1243,8 @@ img {
   margin-top: 13px;
 }
 
-.margin {
-  margin-top: 12px;
+.second-line-hotel {
+  margin-top: 14px;
 }
 
 .hotel-option {
@@ -1254,7 +1289,7 @@ img {
   border-radius: 4px;
   border: none;
   margin: 0;
-  margin-top: -17px;
+  margin-top: -18px;
   padding: 8px 10px;
   cursor: pointer;
 }
@@ -1272,7 +1307,7 @@ img {
   background: #756157;
   border-radius: 4px;
   margin: 0;
-  margin-top: -17px;
+  margin-top: -18px;
   padding: 8px 26px;
   cursor: pointer;
 }
@@ -1384,7 +1419,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: 61px;
-  margin-top: 39px;
+  margin-top: 40px;
   margin-bottom: 60px;
 }
 
@@ -1467,6 +1502,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
 
 .modal {
@@ -1545,11 +1581,12 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 24px;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 19px;
+  padding-right: 45px;
   min-width: 440px;
   min-height: 48px;
   margin-left: 20px;
-  margin-top: 65px;
+  margin-top: 66px;
   border: none;
   background: #F2F2F2;
   border-radius: 4px;
@@ -1567,7 +1604,8 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 24px;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 19px;
+  padding-right: 45px;
   min-width: 440px;
   min-height: 48px;
   margin-left: 15px;
@@ -1609,7 +1647,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 20px;
   line-height: 24px;
   margin-left: 30px;
-  margin-top: 34px;
+  margin-top: 35px;
 }
 
 .date-in-child {
@@ -1618,8 +1656,8 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 86px;
-  margin-top: 34px;
+  margin-left: 90px;
+  margin-top: 35px;
 }
 
 .date-from-child {
@@ -1636,10 +1674,9 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-
   margin: 0;
   padding: 0;
-  margin-left: 188px;
+  margin-left: 186px;
   color: #000;
   margin-top: 3px;
 }
@@ -1672,6 +1709,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-left: 46px;
   margin-top: 23px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .form-label {
@@ -1686,6 +1724,7 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
   border-radius: 0 4px 4px 0;
   position: relative;
+  box-sizing: border-box;
 }
 
 .button-minus:focus {
@@ -1714,7 +1753,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button-pluse-svg {
   position: absolute;
-  left: 18px;
+  left: 21px;
   bottom: 17px;
   content: "";
   color: #696969;
@@ -1739,10 +1778,13 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 18px;
   line-height: 24px;
   border: none;
+  margin: 0;
   width: 23px;
-  height: 46px;
+  height: 48px;
   margin-top: 23px;
   background-color: #F2F2F2;
+  box-sizing: border-box;
+  padding-left: 9px;
 }
 
 .number-pepole::placeholder {
@@ -1752,7 +1794,6 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding-left: 9px;
 }
 
 .number-pepole:focus {
@@ -1829,7 +1870,6 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   bottom: 25px;
   right: 112px;
-  z-index: 1;
   cursor: pointer;
   display: none;
 }
