@@ -33,12 +33,15 @@ body {
   color: #000;
   background-color: #F2F2F2;
   height: 100%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 img {
   max-width: 100%;
   object-fit: contain;
+}
+
+.shadow-wrapper {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .underline {
@@ -430,7 +433,7 @@ img {
   color: #333;
   margin: 0;
   padding: 0;
-  margin-top: -4px;
+  margin-top: -5px;
 }
 
 .button-search {
@@ -446,7 +449,7 @@ img {
   border-radius: 4px;
   display: block;
   padding: 8px 50px;
-  margin: 52px 411px 96px;
+  margin: 53px 411px 96px;
   cursor: pointer;
 }
 
@@ -514,6 +517,7 @@ img {
   background: #f2f2f2;
   border-radius: 4px 0 0 4px;
   padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .field::placeholder {
@@ -542,7 +546,7 @@ img {
   min-height: 52px;
   border: none;
   margin-top: 54px;
-  margin-bottom: 102px;
+  margin-bottom: 105px;
   cursor: pointer;
 }
 
@@ -577,6 +581,8 @@ img {
   width: 142px;
   height: 40px;
   list-style-type: none;
+  margin-top: 44px;
+  margin-left: 70px;
 }
 
 .footer-social-link {
@@ -599,6 +605,7 @@ img {
   margin-bottom: 30px;
   margin-left: 42px;
   position: relative;
+  margin-top: 45px;
 }
 
 .footer-contacts-phone {
@@ -633,7 +640,8 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  margin-left: 41px;
+  margin-left: 40px;
+  margin-top: 48px;
 }
 
 .footer-logo-html-academy:focus {
@@ -701,8 +709,17 @@ img {
 
 .breadcrumbs {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 8px;
+  margin-top: 7px;
+  position: relative;
+}
+
+.breadcrumbs-item-home::after {
+  position: absolute;
+  background-image: url("../images/icons/bread-crumbs-arrow.svg");
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin-left: 4px;
+  content: "";
 }
 
 .breadcrumbs-item {
@@ -725,16 +742,8 @@ img {
   background-position: center;
 }
 
-.breadcrumbs-item-arrow {
-  list-style-type: none;
-  background-image: url("../images/icons/bread-crumbs-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: -1px;
-}
-
 .breadcrumbs-link-hotels {
-  margin-left: 2px;
+  margin-left: 23px;
 }
 
 .breadcrumbs-link-hotels:hover {
@@ -1234,11 +1243,11 @@ img {
   color: #000;
   margin: 0;
   padding: 0;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 
 .second-line-hotel {
-  margin-top: 14px;
+  margin-top: 11px;
 }
 
 .hotel-option {
@@ -1372,6 +1381,8 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 8px 22px 9px 23px;
+  margin-top: 2px;
+  margin-left: -2px;
 }
 
 .icone-stars {
@@ -1478,7 +1489,7 @@ img {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-top: 21px;
+  margin-top: 20px;
   margin-left: 2px;
   margin-bottom: 1px;
 }
