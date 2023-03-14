@@ -31,8 +31,9 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000;
-  background-color: #FFF;
+  background-color: #F2F2F2;
   height: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 img {
@@ -66,6 +67,7 @@ img {
 
 .main-container {
   flex-grow: 1;
+  background-color: #fff;
 }
 
 .page-header {
@@ -129,6 +131,7 @@ img {
   flex-wrap: wrap;
   margin: 0;
   margin-left: -12px;
+  width: 400px;
 }
 
 .navigation-user {
@@ -195,7 +198,6 @@ img {
 
 .button-entry:focus {
   background-color: #615048;
-  outline-color: #615048;
 }
 
 .button-entry:active {
@@ -206,7 +208,7 @@ img {
   color: #FFF;
   background-color: #68A2CA;
   background-image: url("../images/gallary/index-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
@@ -260,7 +262,6 @@ img {
 }
 
 .advantages-list {
-  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -279,42 +280,12 @@ img {
   height: 385px;
 }
 
-.advantages-item:first-child::before {
+.advantages-description-color::after {
   position: absolute;
+  top: -33px;
   left: 170px;
-  margin-top: 188px;
   width: 60px;
   background-color: rgba(255, 255, 255, 0.3);
-  height: 2px;
-  content: "";
-}
-
-.advantages-item:last-child::before {
-  position: absolute;
-  margin-top: 188px;
-  right: 170px;
-  width: 60px;
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 2px;
-  content: "";
-}
-
-.advantages-item:nth-child(3)::before {
-  position: absolute;
-  left: 170px;
-  margin-top: 198px;
-  width: 60px;
-  background-color: rgba(0, 0, 0, 0.25);
-  height: 2px;
-  content: "";
-}
-
-.advantages-item:nth-child(5)::before {
-  position: absolute;
-  margin-top: 198px;
-  right: 170px;
-  width: 60px;
-  background-color: rgba(0, 0, 0, 0.25);
   height: 2px;
   content: "";
 }
@@ -329,6 +300,21 @@ img {
 
 .advantages-description-color {
   margin-top: 62px;
+  position: relative;
+}
+
+.advantages-text {
+  position: relative;
+}
+
+.advantages-text::after {
+  position: absolute;
+  left: 170px;
+  top: -33px;
+  width: 60px;
+  background: rgba(0, 0, 0, 0.3);
+  height: 2px;
+  content: "";
 }
 
 .background-basic-3 {
@@ -350,16 +336,6 @@ img {
 
 .background-second-2 {
   background-color: #83B3D333;
-}
-
-.background-second-2::before {
-  position: absolute;
-  margin-top: 198px;
-  left: 570px;
-  width: 60px;
-  background-color: rgba(0, 0, 0, 0.25);
-  height: 2px;
-  content: "";
 }
 
 .appeal-titel {
@@ -404,8 +380,26 @@ img {
   padding-bottom: 63px;
 }
 
+.home {
+  background-image: url("../images/home.svg");
+  background-repeat: no-repeat;
+  background-position: top 81px center;
+}
+
+.food {
+  background-image: url("../images/food.svg");
+  background-repeat: no-repeat;
+  background-position: top 81px center;
+}
+
+.souvenirs {
+  background-image: url("../images/souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: top 81px center;
+}
+
 .attractions-description {
-  margin-top: 29px;
+  margin-top: 30px;
 }
 
 .attractions-title {
@@ -416,7 +410,7 @@ img {
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 102px;
 }
 
 .hotel-search-title {
@@ -462,7 +456,6 @@ img {
 
 .button-search:focus {
   background-color: #615048;
-  outline-color: #615048;
 }
 
 .button-search:active {
@@ -484,7 +477,7 @@ img {
   color: #FFF;
   background-color: #68A2CA;
   background-image: url("../images/gallary/fone-main.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
   margin: 0 auto;
@@ -506,6 +499,11 @@ img {
 }
 
 .field {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   min-width: 452px;
   height: 52px;
   margin: 0;
@@ -520,7 +518,7 @@ img {
 
 .field::placeholder {
   position: absolute;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -554,7 +552,6 @@ img {
 
 .button-hotel-search:focus {
   background-color: #68A2CA;
-  outline-color: #68A2CA;
 }
 
 .button-hotel-search:active {
@@ -570,7 +567,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 47px 70px 30px;
+  background-color: #FFFFFF;
 }
 
 .footer-social-list {
@@ -637,7 +634,6 @@ img {
   bottom: 0;
   left: 0;
   margin-left: 41px;
-
 }
 
 .footer-logo-html-academy:focus {
@@ -678,7 +674,7 @@ img {
 .catalog-inner {
   color: #FFF;
   background-image: url("../images/gallary/fone-catalog.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #68A2CA;
   padding-top: 36px;
@@ -1030,7 +1026,6 @@ img {
 
 .button-apply:focus {
   outline: solid;
-  outline-color: #82B3D3;
 }
 
 .button-apply {
@@ -1317,7 +1312,6 @@ img {
 
 .hotel-card-button:focus {
   background-color: #615048;
-  outline-color: #615048;
 }
 
 .hotel-card-button:active {
@@ -1347,7 +1341,6 @@ img {
 
 .hotel-like-button:focus {
   background-color: #68A2CA;
-  outline-color: #68A2CA;
 }
 
 .hotel-like-button:active {
@@ -1360,7 +1353,6 @@ img {
 
 .like:focus {
   background-color: #6C9E42;
-  outline-color: #6C9E42;
 }
 
 .like:active {
@@ -1452,7 +1444,6 @@ img {
 
 .pagination-link:focus {
   background-color: #68A2CA;
-  outline-color: #68A2CA;
 }
 
 .pagination-link:active {
@@ -1799,6 +1790,15 @@ input[type="number"]::-webkit-inner-spin-button {
   outline-color: #68A2CA;
 }
 
+.number-pepole[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.number-pepole[type="number"]:hover,
+.number-pepole[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
 .button-reservation {
   min-width: 577px;
   min-height: 60px;
@@ -1824,7 +1824,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button-reservation:focus {
   background-color: #68A2CA;
-  outline-color: #68A2CA;
 }
 
 .button-reservation:active {
